@@ -2,21 +2,22 @@
 
 function perkalianUnik(arr) {
     // you can only write your code here!
-    var mundur=1
+    var inputan= 1
+    
     var tampung = [];
-    var hitung = 1
-    for ( var i = 0; i <= arr.length; i++){
-                // console.log(arr[i])
-    }for (var j=0 ; j < arr.length; j++){
-            mundur += arr[j]
-            console.log(mundur)
-        if ( arr[i] !== arr.length ){
-            hitung *= arr[j]
-        }
-        tampung.push(hitung)
+    
+    for ( var i = 0; i < arr.length; i++){
+                inputan *= arr[i]
     }
-return tampung
-  }
+    for (var j=0 ; j < arr.length; j++){
+            var bagi = inputan / arr[j]
+            
+            tampung.push(bagi)
+        }
+        return tampung
+    }
+
+  
   
   // TEST CASES
   console.log(perkalianUnik([2, 4, 6])); // [24, 12, 8]
