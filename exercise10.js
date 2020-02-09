@@ -26,4 +26,4 @@ function perkalianUnik(arr) {
   console.log(perkalianUnik([1, 3, 3, 1])); // [9, 3, 3, 9]
   console.log(perkalianUnik([2, 1, 8, 10, 2])); // [160, 320, 40, 32, 160]
 
-  // ------------ masih binggung belum ketemu solusi -----------------
+  
