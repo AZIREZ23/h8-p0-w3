@@ -5,14 +5,18 @@
 function pasanganTerbesar(num) {
     // you can only write your code here!
         
-    var numbers = [];
-    num=num.toString()
-    for ( var i =0; i< num.length -1; i++){
-        numbers += num[i]
+    var numbers = "";
+    var nilaiStr =  String(num) 
+    var mulai = "0";
+    for ( var i =0; i< nilaiStr.length -1; i++){
+        
+        numbers = nilaiStr[i]+nilaiStr[i+1]
 
-       
+        if (numbers >= mulai){
+            mulai = numbers
+        }
     }
-    console.log(numbers)
+    return numbers
   }
   
   // TEST CASES
