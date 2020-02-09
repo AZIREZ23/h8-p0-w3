@@ -10,6 +10,22 @@
 
 function mengelompokkanAngka(arr) {
     // you can only write your code here!
+    var tampung1 = []
+    var tampung2 = []
+    var tampung3 = []
+    var result = []
+
+    for (var i = 0; i < arr.length; i++){
+      if (arr[i]%3===0){
+        tampung1.push(arr[i])
+      }else if (arr[i]%2===0){
+        tampung2.push(arr[i])
+      }else {
+        tampung3.push(arr[i])
+      }
+    }
+      result.push(tampung2,tampung3,tampung1)
+      return result
   }
   
   // TEST CASES
