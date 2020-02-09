@@ -37,27 +37,30 @@ switch (kata[4]){
 
 ////////////////////////////////////////////////
 var kata2 = input[3].split("")
-console.log(kata2)
-var kata3 ="";
-for ( var i= kata2.length; i >= 0; i--){
-    kata3 = kata2[i]
-    // console.log(kata3)
-}
 
-// kata4 = kata3.sort()
-// console.log(kata4)
+tang = kata2[0]+kata2[1]
+bul = kata2[3]+kata2[4]
+tah = kata2[6]+kata2[7]+kata2[8]+kata2[9]
+
+var combi = []
+tampil1 = combi.concat(tah, tang, bul)
+console.log(tampil1)
+
+////////////////////////////////////////////////
+
 
 var kata5="";
-kata5 = kata2.join('-')
+tampil2 = combi.concat(tang, bul, tah)
+kata5 = tampil2.join('-')
 console.log(kata5)
+/////////////////////////////////////////////
 
 var kata6="";
 kata6 = input[1].slice(0, 15)
-
 console.log(kata6)
 
 
-// console.log(ambilBulan)
+
 /**
  * keluaran yang diharapkan (pada console)
  *
