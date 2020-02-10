@@ -4,19 +4,26 @@
 
 function angkaPalindrome(num) {
     // you can only write your code here!
-        var tampung = num + 1
-        var ubah = ""
+        var numStr = String(num)
 
-        while (true){
-            var olah = String(tampung)
-            ubah = olah.split('').reverse().join('')
-        if ( tampung === Number(ubah)){
-        return tampung}
-        tampung ++
-    }
+        if (numStr.length == 1){
+            return num + 1
+        }else{
+            while (num) {
+            var setting ="";
+            var angka = num + 1
+            var angkaString = String(angka)
+            for (var i = angkaString.length -1; i >= 0; i--){
+                setting += angkaString[i]
+            }
+            if (setting == angka) {
+                    return angka            
+            }
+                 num ++          
+        }        
+    }              
 }
-    
-  
+
   // TEST CASES
   console.log(angkaPalindrome(8)); // 9
   console.log(angkaPalindrome(10)); // 11
