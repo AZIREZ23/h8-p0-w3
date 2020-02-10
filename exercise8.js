@@ -11,9 +11,11 @@ function pasanganTerbesar(num) {
     for ( var i =0; i< nilaiStr.length -1; i++){
         
         numbers = nilaiStr[i]+nilaiStr[i+1]
-
-        if (numbers >= mulai){
-            mulai = numbers
+        
+        if (numbers > 79 || numbers >= 80 ){
+            return numbers
+            // console.log("ini adalah numbers :  "+ numbers)
+            // console.log("ini adalah mulai : "+ mulai)
         }
     }
     return numbers
