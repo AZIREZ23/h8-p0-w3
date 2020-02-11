@@ -6,26 +6,25 @@ function tentukanDeretGeometri(arr) {
     // you can only write your code here!
   
   var selisih =[]
-  var penambahan=0
 
   if(arr[0] < arr[1]){
     for (var i = 0; i < arr.length-1; i++){
       
         selisih += arr[i+1]/arr[i]
+        // console.log("ini adalah arr[i+1] : "+arr[i+1])
+        // console.log("ini adalah arr[i] : "+arr[i])
+        // console.log("ini adalah selisih : "+selisih)
 
-      if(selisih.length > 1 && selisih[i] === selisih[i-1]){
-
-        penambahan +=1
-
-      } 
-      
-    } 
-    
-    return penambahan === (selisih.length -1)
+      if(selisih[i] === selisih[i-1]){
+        // console.log("ini adalah selisih[i-1]: " +selisih[i])
+        // console.log("ini adalah selisih[i] : " +selisih[i])
+        return true
+      }       
+    }     
+    return false
     
   }
 }
-
   // TEST CASES
   console.log(tentukanDeretGeometri([1, 3, 9, 27, 81])); // true
   console.log(tentukanDeretGeometri([2, 4, 8, 16, 32])); // true
