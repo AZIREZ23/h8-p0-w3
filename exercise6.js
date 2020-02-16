@@ -4,25 +4,25 @@
 
 function angkaPalindrome(num) {
     // you can only write your code here!
-        var numStr = String(num)
-
-        if (numStr.length == 1){
+        var numStr= String(num)
+        if( numStr.length == 1){
             return num + 1
+        
         }else{
-            while (num) {
-            var setting ="";
-            var angka = num + 1
-            var angkaString = String(angka)
-            for (var i = angkaString.length -1; i >= 0; i--){
-                setting += angkaString[i]
+            while(num != tampung){
+            var tampung =""
+            var tambah = num + 1
+            var numStr = String(tambah)
+            for ( var i = numStr.length -1; i>=0; i--){
+                tampung += numStr[i]
+            }if ( tampung == tambah){
+                return tambah
             }
-            if (setting == angka) {
-                    return angka            
-            }
-                 num ++          
-        }        
-    }              
+            num ++
+        }
+    }             
 }
+
 
   // TEST CASES
   console.log(angkaPalindrome(8)); // 9
